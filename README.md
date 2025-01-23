@@ -1,2 +1,7 @@
-# Portfolio
-⚡️ My website built with Next.js, TypeScript, Tailwind and MDX
+# hridyesh.com ⚡️
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Deployment**: [Vercel](https://vercel.com)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Analytics**: [Logrocket](https://logrocket.com/)
+- **Content**: [MDX](https://mdxjs.com/)
