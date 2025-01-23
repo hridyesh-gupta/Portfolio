@@ -8,7 +8,7 @@ import usePaletteOptions from './usePaletteOptions';
 export default function CommandPalette() {
   const [open, setOpen] = useState(false);
 
-  const { pageOptions, blogOptions, generalOptions } = usePaletteOptions();
+  const { pageOptions, generalOptions } = usePaletteOptions();
 
   // Toggle the menu when ⌘K is pressed
   useEffect(() => {
@@ -44,19 +44,6 @@ export default function CommandPalette() {
 
           <Command.Group heading="Pages">
             {pageOptions.map(({ id, name, icon, onSelect }) => (
-              <CommandItem
-                id={id}
-                key={id}
-                name={name}
-                icon={icon}
-                setOpen={setOpen}
-                onSelect={onSelect}
-              />
-            ))}
-          </Command.Group>
-
-          <Command.Group heading="Blogs">
-            {blogOptions.map(({ id, name, onSelect, icon }) => (
               <CommandItem
                 id={id}
                 key={id}
